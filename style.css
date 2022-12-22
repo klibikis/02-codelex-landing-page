@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto+Slab:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Slab", serif;
 }
 p {
   margin: 0;
 }
+
 .heading1 {
   font-size: 6.8vw;
   font-weight: 700;
@@ -20,6 +25,8 @@ p {
   font-weight: 500;
   font-size: 1.5vw;
   line-height: 100%;
+}
+.text-center {
   text-align: center;
 }
 
@@ -29,7 +36,6 @@ p {
 .flexColumn {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
 }
 .flexCenter {
@@ -41,6 +47,7 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 .margin-container {
   display: flex;
   flex-direction: row;
@@ -55,11 +62,17 @@ p {
 .mb-05 {
   margin-bottom: 0.5vw;
 }
+.mb-1 {
+  margin-bottom: 1vw;
+}
 .mb-2 {
   margin-bottom: 2vw;
 }
 .mb-4 {
   margin-bottom: 4vw;
+}
+.mt-05 {
+  margin-top: 0.5vw;
 }
 /* TEST BACKGROUND COLOR CONTAINER, for easier coding */
 .bgtest {
@@ -117,7 +130,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12%;
   border: 1px solid darkorange;
   border-radius: 12px;
   color: darkorange;
@@ -153,7 +165,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
   border: 1px solid darkorange;
   border-radius: 12px;
   color: white;
@@ -185,12 +196,7 @@ a:hover {
   width: 1110px;
   height: 625px;
 }
-/* PAGE 3 */
-.test {
-  background-color: aquamarine;
-  width: 100%;
-  height: 100%;
-}
+
 /* PAGE 6 */
 .textcontainer6_1 {
   width: 54vw;
@@ -208,21 +214,17 @@ a:hover {
   display: flex;
   flex-direction: row;
   width: 75%;
-  height: 25%;
-  padding-top: 8%;
+  padding-top: 2%;
 }
 .pg6container2 {
   display: flex;
   flex-direction: row;
   width: 84%;
-  height: 65%;
   gap: 3%;
 }
 .cardContainer {
   width: 350px;
   height: 350px;
-  left: 545px;
-  top: 411px;
   background: #ffffff;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
@@ -238,4 +240,145 @@ a:hover {
   font-weight: 400;
   width: 50%;
   text-align: center;
+}
+/* PAGE 7 */
+.textcontainer7 {
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+}
+.cardContainerPg7 {
+  width: 350px;
+  height: 420px;
+  background: #ffffff;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  padding: 41px;
+  display: flex;
+  flex-direction: column;
+}
+ul.ul7 {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+}
+
+ul.ul7 li:before {
+  content: "✓";
+  color: gray;
+  margin-right: 10px;
+}
+.p7-pricetag {
+  font-size: 1vw;
+}
+.p7-graytext {
+  font-family: "Hind Siliguri";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: lightgray;
+}
+.getThis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkorange;
+  border-radius: 8px;
+  color: darkorange;
+  font-size: 1.2vw;
+  width: 50%;
+  font-size: 12px;
+  padding: 10px;
+}
+.getThis2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkorange;
+  border-radius: 8px;
+  background-color: darkorange;
+  color: white;
+  font-size: 12px;
+  width: 50%;
+  padding: 10px;
+}
+.pg8cardContainer {
+  width: 120%;
+}
+.orangeContainer {
+  background: #ff7235;
+  color: white;
+}
+.p9text {
+  font-size: 30px;
+}
+.tryfreedemo9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkorange;
+  border-radius: 12px;
+  color: darkorange;
+  background-color: white;
+  font-size: 1.45vw;
+  height: 4vw;
+  width: 20%;
+  margin-right: 2%;
+  margin-top: 60px;
+}
+/* PAGE 10 */
+.page10Container {
+  width: 100%;
+  height: 35vw;
+}
+.page10 {
+  width: 80%;
+  height: 80%;
+}
+.page10ContainerPart {
+  width: 100%;
+  padding-top: 15px;
+}
+.footer {
+  border-top: 1px solid darkgray;
+  font-size: 12px;
+}
+.footerh2 {
+  font-size: 12px;
+}
+.newsletter {
+  width: 25%;
+}
+.flex10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.formMargin {
+  margin: 5px;
+}
+.form {
+  border: 1px solid #292830;
+  border-radius: 8px;
+  width: 70%;
+}
+
+.input {
+  margin-left: 5px;
+  font-size: 10px;
+  border: none;
+  width: 120px;
+}
+.inputButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkorange;
+  border-radius: 8px;
+  background-color: darkorange;
+  color: white;
+  width: 50%;
+  padding: 5px;
+  font-size: 10px;
 }
